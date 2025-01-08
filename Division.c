@@ -1,16 +1,11 @@
 #include<stdio.h>
 void main()
 {
-	int a,b,Div;
-	
-	printf("enter the value of a :");
-	scanf("%d",&a);
-	
-	
-	printf("enter the value of b :");
-	scanf("%d",&b);
+	int a =25;
+	int b=5;
+	int Div;
 	
 	Div = a/b;
-	printf("Division is :%d",Div);
-	
+	 
+	printf("%d",Div);
 }
