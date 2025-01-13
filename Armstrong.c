@@ -1,0 +1,35 @@
+//13. C program to calculate number is armstrong or not.
+
+#include <stdio.h>
+#include <math.h>
+
+void main() 
+{
+    int num, originalNum, remainder, result = 0, digits = 0;
+    
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    
+    originalNum = num;
+    
+    while (originalNum != 0) {
+        originalNum = originalNum/10;
+        ++digits;
+    }
+    
+    originalNum = num;  
+	  
+     while (originalNum != 0) {
+        remainder = originalNum % 10;  
+	    result =result+pow(remainder, digits);
+        originalNum= originalNum/10;  
+		    }
+    
+    
+	    if (result == num) {
+        printf("%d is an Armstrong number.\n", num);
+    } else {
+        printf("%d is not an Armstrong number.\n", num);
+    }
+}
+
