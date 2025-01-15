@@ -3,33 +3,35 @@
 #include <stdio.h>
 #include <math.h>
 
-void main() 
-{
-    int num, originalNum, remainder, result = 0, digits = 0;
-    
+int main() {
+    int num, originalNum, remainder, result = 0, n = 0;
+
     printf("Enter an integer: ");
     scanf("%d", &num);
-    
-    originalNum = num;
-    
-    while (originalNum != 0) {
-        originalNum = originalNum/10;
-        ++digits;
-    }
-    
-    originalNum = num;  
-	  
-     while (originalNum != 0) {
-        remainder = originalNum % 10;  
-	    result =result+pow(remainder, digits);
-        originalNum= originalNum/10;  
-		    }
-    
-    
-	    if (result == num) {
-        printf("%d is an Armstrong number.\n", num);
-    } else {
-        printf("%d is not an Armstrong number.\n", num);
-    }
-}
 
+  
+    originalNum = num;
+
+      do {
+        num = num/10;
+        n++;
+    } while (num != 0); 
+
+    
+    num = originalNum;
+
+    
+    do {
+        remainder = num % 10;  
+        result += pow(remainder, n);
+        num =num/10;  
+    } while (num != 0);  
+
+    
+    if (result == originalNum) {
+        printf("%d is an Armstrong number.\n", originalNum);
+    } else {
+        printf("%d is not an Armstrong number.\n", originalNum);
+    }
+
+}

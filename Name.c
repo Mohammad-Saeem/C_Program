@@ -1,10 +1,11 @@
+//Print 5 times your name using for loop.
 #include<stdio.h>
 void main()
 {
-	int i;
-
-	while(i<=5){
-		printf("Saeem \n");
-		i++;
-	}
+ int i=1;
+ do{
+  	printf("Saeem \n");
+  	i++;
+  	
+ }while(i<=5);	
 }
