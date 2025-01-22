@@ -1,24 +1,16 @@
-//Addition of two matrices:
-
+//Addition of two numbers using pointer.
 #include<stdio.h>
 void main()
 {
-	int A[2][2] = {{1,2},{3,4}};
-	int B[2][2]={{7,8},{5,6}},i,j;
-	int sum[2][2];
+	int a = 5;
+	int b = 8;
+	int c;
+	int *ptr1=&a;
+	int *ptr2=&b;
+	int *ptr3=&c;
 	
-	for(i=0;i<2;i++){
-		for(j=0;j<2;j++){
-			
-			sum[i][j] = A[i][j]+B[i][j];
-		}
-	}
-	
-	for(i=0;i<2;i++){
-		for(j=0;j<2;j++){
-			printf("%d ",sum[i][j]);
-		}
+	*ptr3= *ptr1 + *ptr2;
+	printf("The sum of %d and %d is %d",*ptr1,*ptr2,*ptr3);
 		
-		printf("\n");
+	
 	}
-}
