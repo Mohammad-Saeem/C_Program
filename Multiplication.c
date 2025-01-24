@@ -1,16 +1,12 @@
+//multiplication of two numbers using function 
 #include<stdio.h>
-void main()
-{
-	int a,b,c;
-	
-    printf("Enter the value of a");
-    scanf("%d",&a);
+ void mul(){
+ 	  
+		int a =4, b=3,result;
+		result = a*b;
+		printf("%d",result);
+	}
+	void main(){
+		mul();
+	}
 
-    printf("Enter the value of b");
-    scanf("%d",&b);
-    
-    c=a*b;
-    
-    printf("%d",c);
-    
-}

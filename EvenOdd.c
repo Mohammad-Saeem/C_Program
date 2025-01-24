@@ -1,20 +1,19 @@
 #include<stdio.h>
-void main()
-{
 
-int a;
-
-printf("Enter the value of a");
-scanf("%d",&a);
-
-if (a%2==0) {
+EvenOdd(){
+	int num;
+	printf("Enter the number");
+	scanf("%d",&num);
+	if(num%2==0){
+		printf("The number %d is even",num);
+	}
 	
-	printf("%d is a even number",a);
+	else{
+		printf("The Number %d is Odd",num);
+	}
 }
 
-else {
-	printf("%d is an odd number");
+void main(){
+	
+	EvenOdd();
 }
-
-}
-

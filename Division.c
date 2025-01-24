@@ -1,11 +1,12 @@
 #include<stdio.h>
-void main()
-{
-	int a =25;
-	int b=5;
-	int Div;
+
+div(){
+	int a=35,b=5,result;
+	result = a/b;
+	printf("%d",result);
+}
+
+void main(){
+	div();
 	
-	Div = a/b;
-	 
-	printf("%d",Div);
 }
